@@ -52,32 +52,32 @@
 		document.getElementsByTagName("body")[0].appendChild(editForm);
 
 	}
-	function edit() {
-		let cnt = document.getElementById("editbtn").cnt;
-		let editDiv = document.getElementById("d_" + cnt);
-		let pwd2 = document.getElementById("editpwd").value;//수정폼에 입력한 글 비밀번호
-		if (editDiv.pwd != pwd2) {
-			alert("글 비밀번호 불일치. 수정불가");
-		} else {
-			let newWriter = document.getElementById("editwriter").value;
-			let newContent = document.getElementById("editcontent").value;
-			document.getElementById("w_" + cnt).innerHTML = newWriter;
-			document.getElementById("c_" + cnt).innerHTML = newContent;
-		}
-		document.getElementById("editwriter").value = "";
-		document.getElementById("editcontent").value = "";
-		document.getElementById("editpwd").value = "";
-		cancel();
-	}
-	function del(cnt) {
-		let pwd = prompt("글 비밀번호");
-		let delDiv = document.getElementById("d_" + cnt);
-		if (pwd == delDiv.pwd) {
-			document.getElementById("list").removeChild(delDiv);
-		}else{
-			alert("글 비밀번호 불일치. 삭제취소");
-		}
-	}
+	// function edit() {
+	// 	let cnt = document.getElementById("editbtn").cnt;
+	// 	let editDiv = document.getElementById("d_" + cnt);
+	// 	let pwd2 = document.getElementById("editpwd").value;//수정폼에 입력한 글 비밀번호
+	// 	if (editDiv.pwd != pwd2) {
+	// 		alert("글 비밀번호 불일치. 수정불가");
+	// 	} else {
+	// 		let newWriter = document.getElementById("editwriter").value;
+	// 		let newContent = document.getElementById("editcontent").value;
+	// 		document.getElementById("w_" + cnt).innerHTML = newWriter;
+	// 		document.getElementById("c_" + cnt).innerHTML = newContent;
+	// 	}
+	// 	document.getElementById("editwriter").value = "";
+	// 	document.getElementById("editcontent").value = "";
+	// 	document.getElementById("editpwd").value = "";
+	// 	cancel();
+	// }
+	// function del(cnt) {
+	// 	let pwd = prompt("글 비밀번호");
+	// 	let delDiv = document.getElementById("d_" + cnt);
+	// 	if (pwd == delDiv.pwd) {
+	// 		document.getElementById("list").removeChild(delDiv);
+	// 	}else{
+	// 		alert("글 비밀번호 불일치. 삭제취소");
+	// 	}
+	// }
 </script>
 </head>
 <body>
