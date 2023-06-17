@@ -50,17 +50,17 @@
 		cnt++;
 		return newDiv;
 	}
-	function editForm(cnt) {
-		let editDiv = document.getElementById("d_" + cnt); //수정할 글의 div
-		let editForm = document.getElementById("editf");
-		editDiv.appendChild(editForm);
-		let writer = document.getElementById("w_" + cnt).innerHTML;
-		let content = document.getElementById("c_" + cnt).innerHTML;
-		// document.getElementById("editwriter").value = writer;
-		document.getElementById("editcontent").value = content;
-		document.getElementById("editbtn").cnt = cnt;//버튼에 cnt속성을 추가해서, 수정 글번호를 저장
-		editForm.style.display = '';
-	}
+	// function editForm(cnt) {
+	// 	let editDiv = document.getElementById("d_" + cnt); //수정할 글의 div
+	// 	let editForm = document.getElementById("editf");
+	// 	editDiv.appendChild(editForm);
+	// 	let writer = document.getElementById("w_" + cnt).innerHTML;
+	// 	let content = document.getElementById("c_" + cnt).innerHTML;
+	// 	// document.getElementById("editwriter").value = writer;
+	// 	document.getElementById("editcontent").value = content;
+	// 	document.getElementById("editbtn").cnt = cnt;//버튼에 cnt속성을 추가해서, 수정 글번호를 저장
+	// 	editForm.style.display = '';
+	// }
 	// function cancel() {
 	// 	let editForm = document.getElementById("editf");
 	// 	editForm.style.display = 'none';
